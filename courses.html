@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Register Your Courses</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <div class="auth-container">
+    <div class="auth-card">
+      <!-- Back arrow -->
+      <button class="back-btn" onclick="location.href='profile.html'">
+        ←
+      </button>
+
+      <h2>Register Your Courses</h2>
+
+      <!-- toned-down note -->
+      <p class="note">
+        Note: This process is an important step to helping you get your desired support, so fill in the courses you're offering this semester (Including outstanding courses if necessary).
+      </p>
+
+      <form id="coursesForm">
+        <!-- Session & Semester -->
+        <div class="two-col">
+          <label>
+            Session
+            <select id="session">
+              <option>2024/25</option>
+              <option>2025/26</option>
+              <option>2026/27</option>
+              <option>2027/28</option>
+              <option>2028/29</option>
+              <option>2029/30</option>
+            </select>
+          </label>
+          <label>
+            Semester
+            <select id="semester">
+              <option>First</option>
+              <option>Second</option>
+            </select>
+          </label>
+        </div>
+
+        <!-- Department -->
+        <label>
+          Department
+          <select id="department">
+            <option>Computer Science</option>
+            <option>Information and Communication Technology</option>
+            <option>Microbiology</option>
+            <option>Biochemistry</option>
+            <option>Physics and Electronics</option>
+            <option>Industrial Chemistry</option>
+            <option>Geology</option>
+          </select>
+        </label>
+
+        <!-- Courses table -->
+        <table class="courses-table">
+          <thead>
+            <tr>
+              <th>#</th>
+              <th>Course Code</th>
+              <th>Course Title (optional)</th>
+            </tr>
+          </thead>
+          <tbody id="coursesBody">
+            <!-- The javascript code for the tsble will be here -->
+          </tbody>
+        </table>
+
+        <!-- Next button -->
+        <button type="submit" id="nextBtn" class="next-btn" disabled>
+          NEXT
+        </button>
+      </form>
+    </div>
+  </div>
+
+  <script src="courses.js"></script>
+</body>
+</html>

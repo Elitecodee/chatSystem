@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Set Up Your Profile</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+
+  <div class="auth-container">
+    <div class="auth-card">
+
+      <!-- ← Back to login -->
+      <button class="back-btn" onclick="location.href='index.html'">
+        ←
+      </button>
+
+      <!-- Profile picture placeholder -->
+      <div class="profile-pic" id="profilePic">
+        <!--camera icon at the bottom right corner-->>
+        <i class="camera-icon" aria="Edit profile picture">📷</i>
+        <!--shuffle button-->>
+        <button
+    type="button"
+    id="shuffleBtn"
+    class="shuffle-icon"
+    disabled
+    aria-label="Shuffle avatar"
+  >🔄</button>
+      </div>
+      <h2>Set Up Your Profile</h2>
+
+      <form id="profileForm">
+        <!-- 1) Name (pre-filled) -->
+        <label for="name">Name</label>
+        <input type="text" id="name" disabled />
+
+        <!-- 2) Email (pre-filled) -->
+        <label for="email">Email</label>
+        <input type="email" id="email" disabled />
+
+        <!-- 3) Level dropdown -->
+        <label for="level">Level</label>
+        <select id="level" required>
+          <option value="">Select your level</option>
+          <option>100</option>
+          <option>200</option>
+          <option>300</option>
+          <option>400</option>
+          <option>500</option>
+        </select>
+
+        <!-- 4) Gender dropdown -->
+        <label for="gender">Gender</label>
+        <select id="gender" required>
+          <option value="">Select your gender</option>
+          <option>Male</option>
+          <option>Female</option>
+        </select>
+
+        <!-- 5) Matric number -->
+        <label for="matric">Matric Number</label>
+        <input type="text" id="matric" placeholder="Enter your 9-digit matric no." required />
+
+        <!-- 6) Phone number -->
+        <label for="phone">Phone Number</label>
+        <input type="text" id="phone" placeholder="Enter your 11-digit phone no." required />
+        <button
+          type="submit"
+          id="nextBtn"
+          class="next-btn"
+          disabled>NEXT</button>
+      </form>
+
+    </div>
+  </div>
+
+  <script src="profile.js"></script>
+</body>
+</html>

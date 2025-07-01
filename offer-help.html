@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Courses You Can Help With</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <div class="auth-container">
+    <div class="auth-card">
+
+      <!-- Back to Academic Evaluation -->
+      <button class="back-btn" onclick="location.href='academic.html'">←</button>
+      <h2>Courses You Can Help With</h2>
+
+      <p class="note small">
+        Tick the courses you’re able to tutor, select your knowledge level, then click Save.
+      </p>
+
+      <table class="courses-table">
+        <thead>
+          <tr>
+            <th>#</th>
+            <th>Course Code</th>
+            <th>Help?</th>
+            <th>Knowledge Level</th>
+          </tr>
+        </thead>
+        <tbody id="offerBody">
+          <!-- injected by JS -->
+        </tbody>
+      </table>
+
+      <button id="saveOfferBtn" class="small-btn" disabled>Save</button>
+      <button id="nextOfferBtn" class="small-btn" disabled>Next</button>
+    </div>
+  </div>
+
+  <script src="offer-help.js"></script>
+</body>
+</html>

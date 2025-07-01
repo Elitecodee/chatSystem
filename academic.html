@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Academic Evaluation</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <div class="auth-container">
+    <div class="auth-card">
+
+      <!-- Header -->
+      <button class="back-btn" onclick="location.href='courses.html'">←</button>
+      <h2>Academic Evaluation</h2>
+
+      <!-- Option buttons -->
+      <div class="eval-options">
+        <button id="needHelpBtn" class="eval-btn">
+          Register Courses You <strong>Need Help</strong> With
+        </button>
+        <button id="offerHelpBtn" class="eval-btn">
+          Register Courses You <strong>Can Offer Help</strong> With
+        </button>
+      </div>
+
+      <!-- Note at bottom -->
+      <p class="note small">
+        You may complete both forms—“Need Help” and “Offer Help”—in any order.
+      </p>
+    </div>
+  </div>
+
+  <script>
+    document.getElementById('needHelpBtn')
+      .addEventListener('click', () => location.href = 'need-help.html');
+    document.getElementById('offerHelpBtn')
+      .addEventListener('click', () => location.href = 'offer-help.html');
+  </script>
+</body>
+</html>

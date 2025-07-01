@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Courses You Need Help With</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <div class="auth-container">
+    <div class="auth-card">
+
+      <!-- Back to academic -->
+      <button class="back-btn" onclick="location.href='academic.html'">←</button>
+      <h2>Courses You Need Help With</h2>
+
+      <p class="note small">
+        Tick the courses you need help with, then click Save.
+      </p>
+
+      <!-- Table: code only + checkbox -->
+      <table class="courses-table">
+        <thead>
+          <tr>
+            <th>#</th>
+            <th>Course Code</th>
+            <th>Tick for Help</th>
+          </tr>
+        </thead>
+        <tbody id="helpBody">
+          <!-- JS will inject 12 rows here -->
+        </tbody>
+      </table>
+
+      <!-- Save & Next buttons -->
+      <button id="saveBtn" class="small-btn" disabled>Save</button>
+      <button id="nextBtn" class="small-btn" disabled>Next</button>
+    </div>
+  </div>
+
+  <script src="need-help.js"></script>
+</body>
+</html>
